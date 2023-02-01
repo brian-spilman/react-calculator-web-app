@@ -64,6 +64,7 @@ export function InputFunction(){
         <button onClick={doMultiplication}>Multiply</button>
         <button onClick={doDivision}>Division</button>
 
+        <h2>Results/History</h2>
         <ul>
 
             {results.map(num => <li>{num}</li>)}
