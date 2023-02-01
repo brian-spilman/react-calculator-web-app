@@ -33,6 +33,24 @@ export function InputFunction(){
         setResults(resultsClone);
     }
 
+    function doSubtraction(){
+        const resultsClone = [...results]; // clones the array
+        resultsClone.push(numbers.numOne - numbers.numTwo);
+        setResults(resultsClone);
+    }
+
+    function doMultiplication(){
+        const resultsClone = [...results]; // clones the array
+        resultsClone.push(numbers.numOne * numbers.numTwo);
+        setResults(resultsClone);
+    }
+
+    function doDivision(){
+        const resultsClone = [...results]; // clones the array
+        resultsClone.push(numbers.numOne / numbers.numTwo);
+        setResults(resultsClone);
+    }
+
     return <>
     
         <label htmlFor="fNumInput">First Number</label>
@@ -42,9 +60,9 @@ export function InputFunction(){
         <input id="textId" type="text" placeholder="0" onChange={handleSecondNum} size={30}></input>
 
         <button onClick={doAddition}>Add</button>
-        {/* <button onClick={doSubtraction}>Subtract</button>
+        <button onClick={doSubtraction}>Subtract</button>
         <button onClick={doMultiplication}>Multiply</button>
-        <button onClick={doDivision}>Division</button> */}
+        <button onClick={doDivision}>Division</button>
 
         <ul>
 
