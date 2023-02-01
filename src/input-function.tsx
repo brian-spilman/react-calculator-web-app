@@ -42,9 +42,9 @@ export function InputFunction(){
         <input id="textId" type="text" placeholder="0" onChange={handleSecondNum} size={30}></input>
 
         <button onClick={doAddition}>Add</button>
-        <button onClick={doSubtraction}>Subtract</button>
+        {/* <button onClick={doSubtraction}>Subtract</button>
         <button onClick={doMultiplication}>Multiply</button>
-        <button onClick={doDivision}>Division</button>
+        <button onClick={doDivision}>Division</button> */}
 
         <ul>
 
